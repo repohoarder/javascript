@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JWPlayer Testing</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	<style>
+		body {background:#eee;}
+
+		.jw-thumb {color:#000;}
+		.jw-thumb:hover {cursor:pointer;color:#666;}
+
+		.jw-thumb img {border:2px solid transparent;}
+		.jw-thumb:hover img {border:2px solid yellow;}
+
+		.jw-thumb div {text-align:center;}
+		.jw-thumb div span {display:block;font-weight:700;}
+	</style>
+
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="row pt-3">
+
+			<div class="col">
+
+				<!-- 
+
+				add sticky, viewport, autoplay, muted, repeat options
+
+				add playlist to player AND thumb (use JSON endpoint instead of array)
+
+				possibly add title, description..
+
+				-->
+
+				<div class="jw-vidya" data-jw-media-id="CKH8v7de" data-jw-adops="testing" data-jw-autoplay="1" data-jw-muted="0" data-jw-repeat="1"></div>
+
+			</div>
+
+			<div class="col">
+
+				<div class="jw-vidya" data-jw-media-id="i0FHgaBL" data-jw-adops="testing"></div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	
+	<!-- This needs to be valid in order to work -->
+	<script type="text/javascript" src="//content.jwplatform.com/libraries/4w7CYDtY.js"></script>
+
+	<script src="jwplayer.js"></script>
+
+</body>
+</html>
