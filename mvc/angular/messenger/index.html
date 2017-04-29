@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <!-- Include the AngularJS library -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+  </head>
+  <body ng-app="MessengerApp">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Portfolio</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+    <!-- /.content -->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Messenger</h1>
+        </div>
+      </div>
+
+      <div class="row main" ng-controller="MessengerController">
+
+        <div class="row">
+          <div class="col-xs-12">
+           <p>Total Messages: {{ totalMessages() }}</p>
+          </div>
+        </div>
+
+        <div class="card" ng-repeat="msg in messages">
+          <div class="row" style="margin-top:10px;">
+            <div class="col-xs-12 col-sm-1">
+              <img src="{{ msg.avatar }}" class="img-responsive" style="max-height:50px;" />
+            </div>
+            <div class="col-xs-12 col-sm-11">
+              <p>{{ msg.msg }}</p>
+            </div>
+          </div>
+        </div>
+
+
+        <form class="row row-chat" ng-submit="addMessage()">
+            <div class="input-group">
+                <input type="text" class="form-control" ng-model="form.text" placeholder="Type your message" />
+                <input type="hidden" ng-model="form.justify" value="{{ (totalMessages() % 2 === 0)? 'left': 'right' }}" />
+                <input type="hidden" ng-model="form.avatar" value="https://cdn1.iconfinder.com/data/icons/user-pictures/101/malecostume-512.png" />
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                    <button type="button" class="btn btn-primary" ng-click="clearMessages()">Clear</button>
+                </span>
+            </div>
+        </form>   
+
+      </div>
+    </div>
+    <!-- /.content -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Ng Modules -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ng Controllers -->
+    <script src="assets/js/controllers/MessengerController.js"></script>
+
+    <!-- Ng Directives --
+    <script src="assets/js/directives/appInfo.js"></script>
+    <script src="assets/js/directives/installApp.js"></script>
+    -->
+
+  </body>
+</html>
