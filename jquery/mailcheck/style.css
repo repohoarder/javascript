@@ -1,0 +1,6 @@
+.autofixemail {background:#eee;color:#000;border:1px solid #ddd;position:absolute;z-index:3000;}
+.autofixemail .autofixconfirm {padding:5px;font-style:italic;}
+.autofixemail .autofixconfirm span {padding-left:10px;display:block;font-style:normal;font-weight:bold;cursor:pointer;}
+.autofixemail .autofixconfirm span:hover {text-decoration:underline;}
+.autofixemail .autofixclose {cursor:pointer;color:red;position:absolute;right:0;top:0;font-weight:bold;font-size:1.4em;padding:10px;line-height:1em;}
+.autofixemail .autofixclose:hover {opacity:0.8;}

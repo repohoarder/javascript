@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Exit Intent Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+  <h2>Exit Intent</h2>
+  <p>Attempt to exit the top of the page to see the modal in action.</p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="exit-intent.js"></script>
+</body>
+</html>
+
+
+<div id="exit-pop" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header" style="background:#000;padding:0;min-height:0;border:none"></div>
+        <div class="modal-body" style="background:#000;border:2px solid #fff;border-radius:5px">
+          <div class="row">
+
+            <div style="font-family:Oswald,Impact,Arial,Helvetica,sans-serif;color:#fff;text-align:center;background:url('img/gradient.png') center center;" class="col-xs-12">
+
+              
+              <h3 style="font-size:70px;margin:25px 0;font-weight:700">WAIT!</h3>
+              <p style="font-size:36px;z-index:201;padding-left:20px;clear:both;margin-bottom:20px">We're so confident  <strong><em>{INSERT PRODUCT NAME}</em></strong> &nbsp; will make you {INSERT ADJECTIVE} that we’d like to offer you a <b><u>X%</u></b> discount.</p>
+              <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1">
+                <a style="line-height:1.4em;font-weight:700;padding:14px 0 16px;background:url('img/button.png') center center no-repeat;background-size:contain;color:#ad5c19;font-size:28px;width:100%;display:block;text-shadow: 1px 1px 1px #ffea92;" data-value="View Offer" data-position="1" data-element="link" data-file="billing.php" data-page="billing-exit-pop" class="event-click" href="#">Get It Now For Only $X</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

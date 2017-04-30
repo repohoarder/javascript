@@ -1,7 +1,6 @@
 $(document).ready(function(){
 	var previous_position 	= 1;
 
-
 	if ($("#exit-pop").length){
 
 		// code to fire exit pop
