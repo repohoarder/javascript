@@ -21,7 +21,7 @@ $(document).ready(function(){
 
 		    // see if we have an element to click
 		    if (autoclick.id && $("#" + autoclick.id).length){
-		    	$("#" + autoclick.id).click();
+		    	document.getElementById(autoclick.id).click(); 	// using pure JS so that it will work with <a> tags
 		    }
 
 		}

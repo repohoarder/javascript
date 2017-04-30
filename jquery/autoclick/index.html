@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Autoclick Tool</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+  <h2>Autoclick Elements</h2>
+  <p>Example Usage:
+  	<ul>
+  		<li><a href="index.html?aclick=google">This link will autoclick the Google link below (opening Google in a new tab)</a></li>
+  		<li><a href="index.html?aclick=button">This link will autoclick the button, causing the example modal to open.</a></li>
+  	</ul>
+  </p>
+  <p><a id="google" href="http://www.google.com" target="_blank">Open Google (in new window)</a></p>
+  <p><button id="button" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Launch Modal</button></p>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Example Modal</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="autoclick.js"></script>
+</body>
+</html>
