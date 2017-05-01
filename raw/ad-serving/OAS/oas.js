@@ -1,5 +1,3 @@
-<!-- Initialize OAS -->
-<script type="text/javascript">
 var oas_tag			= oas_tag || {};
 oas_tag.url 		= 'oascentral.stackmag.com';//'oasc17.247realmedia.com';//'delivery.uat.247realmedia.com';
 oas_tag.sizes 		= function() {
@@ -31,14 +29,5 @@ function refreshAds()
 {
 	 oas_tag.reloadAds();
 }
-</script>
 
-<div id="oas_Top"></div>
-<script type="text/javascript">oas_tag.loadAd("Top");</script>
-
-<div id="oas_Right2"></div>
-<script type="text/javascript">oas_tag.loadAd("Right2");</script>
-
-<script type="text/javascript">
 show_banners();
-</script>
